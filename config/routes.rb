@@ -5,7 +5,7 @@ resources :groups do
   member do
     post :join
     post :quit
-  end 
+  end
 
 
 
@@ -13,5 +13,8 @@ resources :posts
 end
 root 'groups#index'
 
+namespace :account do
+  resources :groups
+end
 
 end
